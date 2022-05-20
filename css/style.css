@@ -555,7 +555,7 @@ p {
     margin-top: 5vh;
     width: 100%;
     height: 40px;
-    background-image: url(./img/txt_top.svg);
+    background-image: url(../img/txt_top.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -566,7 +566,7 @@ p {
     width: 100%;
     height: 20px;
     margin-bottom: 40px;
-    background-image: url(./img/txt_bottom.svg);
+    background-image: url(../img/txt_bottom.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
@@ -576,7 +576,7 @@ p {
 .top {
     width: 100%;
     height: 16.6vh;
-    background-image: url(./img/top.png);
+    background-image: url(../img/top.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: contain;
@@ -587,7 +587,7 @@ p {
 .bottom {
     width: 100%;
     height: 16.6vh;
-    background-image: url(./img/bottom.png);
+    background-image: url(../img/bottom.png);
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: contain;
@@ -601,7 +601,7 @@ p {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(./img/bgpattern_tbl.png);
+    background-image: url(../img/bgpattern_tbl.png);
     display: none;
 }
 
@@ -642,15 +642,15 @@ p {
 }
 
 .kakao {
-    background-image: url(./img/kakaoicon.svg);
+    background-image: url(../img/kakaoicon.svg);
 }
 
 .facebook {
-    background-image: url(./img/facebookicon.png);
+    background-image: url(../img/facebookicon.png);
 }
 
 .instagram {
-    background-image: url(./img/instaicon.png);
+    background-image: url(../img/instaicon.png);
 }
 
 
@@ -672,7 +672,7 @@ p {
 }
 
 #back {
-    background-image: url(./img/arrow.svg);
+    background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 36px;
@@ -778,7 +778,7 @@ p {
 @media screen and (max-width : 370px) {
 
     .bg_pattern {
-        background-image: url(./img/bgpattern.png);
+        background-image: url(../img/bgpattern.png);
     }
 
     .h4 {
