@@ -69,14 +69,14 @@
                     </div>
                     <div class="ansbutton_warp">
                         <div class="left_angle"></div>
-                        <div id="ans_01" class="ans_button">
+                        <div id="ans_01" class="ans_button" onclick="javascript:viewResult()">
                             <span class="q_innerbox">먼저 연락해서 시간있냐고 물어본다</span>
                         </div>
                         <div class="right_angle"></div>
                     </div>
                     <div class="ansbutton_warp">
                         <div class="left_angle"></div>
-                        <div id="ans_02" class="ans_button">
+                        <div id="ans_02" class="ans_button" onclick="javascript:viewResult()">
                             <span class="q_innerbox">자존심이 허락안해... 그냥 지나간다</span>
                         </div>
                         <div class="right_angle"></div>
@@ -89,7 +89,7 @@
             </div>
         </article>
         <!-- 결과페이지 -->
-        <article class="result">
+        <article class="result" id="result">
             <div class="result_card">
                 <div class="stars">
                     <div class="left_star"></div>
@@ -117,14 +117,15 @@
                                 <div class="bold">단단함</div>
                                 <div class="bold">선호도</div>
                             </div>
-                            <div id="detail" class="mb-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, saepe.</div>
+                            <div id="detail" class="mb-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Pariatur, saepe.</div>
                         </div>
 
                         <div>
                             <div class="star_line mb-10">
                                 <picture class="sm_star"></picture>
                                 <div class="star_centerline_srt"></div>
-                                <p class="gold">특징</p>
+                                <p class="gold bold">특징</p>
                                 <div class="star_centerline_srt"></div>
                                 <picture class="sm_star"></picture>
                             </div>
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </article>
-        <div class="footer">
+        <div class="footer" id="result_share">
             <p class="gold center">
                 SNS 공유하기
             </p>

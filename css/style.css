@@ -479,16 +479,24 @@ textarea {
 
 
 /* 디자인시스템 */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .gold {
     color: #dcbd64;
 }
 
 .h2 {
-    font-size: 3.75rem;
+    font-size: 2.5rem;
 }
 
 .h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .h4 {
@@ -524,16 +532,21 @@ p {
     font-weight: 700;
 }
 
+.black {
+    font-weight: 900;
+}
+
 .center {
     text-align: center;
 }
 
-/*  */
+/* v페이지시작------------------ */
 
 .container {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    background-color: #0f0f0f;
 }
 
 .main {
@@ -543,7 +556,6 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #0f0f0f;
     /* display: none; */
 }
 
@@ -661,20 +673,21 @@ p {
 .test {
     width: 100%;
     height: 100%;
-    background-color: #0f0f0f;
     display: none;
 }
 
 .test_container {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #back {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top: 36px;
-    margin-bottom: 18px;
+    margin-bottom: 50px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -690,7 +703,7 @@ p {
 
 .progressbar {
     width: 50vw;
-    min-width: 300px;
+    min-width: 320px;
     height: 4px;
     border-radius: 10px;
     background-color: #fff;
@@ -743,30 +756,39 @@ p {
     color: #fff;
 }
 
-.ansbutton_warp{
+.ansbutton_warp {
     width: 50vw;
     min-width: 321px;
     display: flex;
     flex-direction: row;
     margin-bottom: 2vh;
 }
-.left_angle,.right_angle{
+
+.testbot {
+    margin-top: 30px;
+}
+
+.left_angle,
+.right_angle {
     width: 10px;
     height: 60px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.left_angle{
+
+.left_angle {
     background-image: url(../img/left_angle.svg);
 }
-.right_angle{
+
+.right_angle {
     background-image: url(../img/right_angle.svg);
 }
+
 .ans_button {
     width: 100%;
     min-width: 300px;
     height: 60px;
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
     color: #fff;
     border-top: 1px solid #dcbd64;
@@ -785,47 +807,149 @@ p {
 .ans_button:hover {
     background: linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%);
 }
-.stars{
+
+.stars {
     margin: 20px auto;
     width: 50vw;
     min-width: 300px;
-    height: 18px;
+    height: 32px;
 }
-.left_star,.right_star{
-    height: 18px;
-    width: 18px;
+
+.left_star,
+.right_star {
+    height: 32px;
+    width: 32px;
     background-image: url(../img/star.svg);
 }
-.left_star{
+
+.left_star {
     float: left;
 }
-.right_star{
+
+.right_star {
     float: right;
 }
 
 /* 결과페이지 */
-.result{
+.result {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+.result_card {
+    margin: 0 auto;
+    width: 95vw;
+    height: 90vh;
+    min-width: 320px;
+    max-width: 520px;
+    border-radius: 15px;
+    border: 2px solid #dcbd64;
     background-image: url(../img/result_bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #0f0f0f;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
-.result_frame{
+
+.result_card>.stars {
+    width: 80vw;
+    max-width: 480px;
+}
+
+.result_frame {
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    max-height: 681px;
+    max-height: 680px;
+    text-align: center;
+    color: #dcbd64;
     background-image: url(../img/result_frame.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.result span {
+    display: block;
+}
+
+.gemstone_frame {
+    width: 110px;
+    height: 142px;
+    margin: 20px auto;
+    background-image: url(../img/gemstone_ring.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_p_wrap {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 30px;
+    color: #fff;
+}
+
+#result_subtitle {
+    margin-top: 70px;
+}
+
+.star_line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sm_star {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/star_sm.png);
+}
+
+.star_centerline {
+    border-top: 1px solid #D4B864;
+    margin: 20px 5px;
+    width: 100%;
+}
+
+.star_centerline_srt {
+    width: 35%;
+    border-top: 1px solid #D4B864;
+}
+
+.rank_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+.footer:last-child {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#result_share{
+    display: none;
+    margin: 30px auto;
+}
+#result_share::before{
+    content: url();
+}
+
+
+
 
 /* 반응형 */
 
@@ -835,7 +959,7 @@ p {
     }
 }
 
-@media screen and (max-width : 370px) {
+@media screen and (max-width : 375px) {
 
     .bg_pattern {
         background-image: url(../img/bgpattern.png);
@@ -849,11 +973,25 @@ p {
         font-size: 1.7rem;
     }
 
+    .h2 {
+        font-size: 3rem;
+    }
+
     .button {
         width: 250px;
     }
 
     .tit_bottom {
         margin-bottom: 20px;
+    }
+
+    #result_subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width : 321px) {
+    .result_card {
+        min-width: 300px;
     }
 }
