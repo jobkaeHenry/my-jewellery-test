@@ -19,12 +19,12 @@
             </div>
             <div class="tit">
                 <div class="tit_top"></div>
-                <h3 class="arc_txt gold h4 light">
+                <h2 class="arc_txt gold h5 regular mb-10">
                     심리테스트로 나를 닮은 보석찾기
-                </h3>
-                <h2 class="bold gold h3">
-                    나를 닮은 보석은?
                 </h2>
+                <h3 class="bold gold h3">
+                    나를 닮은 보석은?
+                </h3>
                 <div class="tit_bottom"></div>
             </div>
             <div class="button" id="startTest" onclick="javascript: startTest()">
@@ -90,36 +90,72 @@
         </article>
         <!-- 결과페이지 -->
         <article class="result">
-            <div class="stars">
-                <div class="left_star"></div>
-                <div class="right_star"></div>
-            </div>
-
-            <div class="result_frame">
-                파라오의사랑
-            </div>
-
-            <div class="footer">
-                <p class="gold center">
-                    SNS 공유하기
-                </p>
-                <div class="api">
-                    <a href="#">
-                        <div class="kakao"></div>
-                    </a>
-                    <a href="#">
-                        <div class="instagram"></div>
-                    </a>
-                    <a href="#">
-                        <div class="facebook"></div>
-                    </a>
+            <div class="result_card">
+                <div class="stars">
+                    <div class="left_star"></div>
+                    <div class="right_star"></div>
                 </div>
-            </div class="footer">
-            <div class="stars">
-                <div class="left_star"></div>
-                <div class="right_star"></div>
+                <div class="result_frame">
+                    <span class="h5" id="result_subtitle">
+                        파라오의 사랑,
+                    </span>
+                    <span class="h3 black" id="result_title">
+                        페리도트
+                    </span>
+                    <div class="gemstone_frame">
+                        <img src="./img/gemstone1.png" alt="gemstone" class="gemstone">
+                    </div>
+                    <div class="result_p_wrap">
+                        <div>
+                            <div class="star_line">
+                                <picture class="sm_star"></picture>
+                                <div class="star_centerline"></div>
+                                <picture class="sm_star"></picture>
+                            </div>
+                            <div class="rank_wrap">
+                                <div class="bold">희귀성</div>
+                                <div class="bold">단단함</div>
+                                <div class="bold">선호도</div>
+                            </div>
+                            <div id="detail" class="mb-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, saepe.</div>
+                        </div>
+
+                        <div>
+                            <div class="star_line mb-10">
+                                <picture class="sm_star"></picture>
+                                <div class="star_centerline_srt"></div>
+                                <p class="gold">특징</p>
+                                <div class="star_centerline_srt"></div>
+                                <picture class="sm_star"></picture>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, possimus.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    <div class="left_star"></div>
+                    <div class="right_star"></div>
+                </div>
             </div>
         </article>
+        <div class="footer">
+            <p class="gold center">
+                SNS 공유하기
+            </p>
+            <div class="api">
+                <a href="#">
+                    <div class="kakao"></div>
+                </a>
+                <a href="#">
+                    <div class="instagram"></div>
+                </a>
+                <a href="#">
+                    <div class="facebook"></div>
+                </a>
+            </div>
+        </div class="footer">
     </div>
 </body>
 <script src="./js/showAndHide.js"></script>
