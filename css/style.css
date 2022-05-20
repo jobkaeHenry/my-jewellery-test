@@ -845,6 +845,7 @@ p {
     height: 90vh;
     min-width: 320px;
     max-width: 520px;
+    min-height: 730px;
     border-radius: 15px;
     border: 2px solid #dcbd64;
     background-image: url(../img/result_bg.png);
@@ -934,7 +935,6 @@ p {
     margin-bottom: 20px;
 }
 
-
 .footer:last-child {
     width: 100%;
     margin: 0 auto;
@@ -943,9 +943,6 @@ p {
 #result_share{
     display: none;
     margin: 30px auto;
-}
-#result_share::before{
-    content: url();
 }
 
 
@@ -995,3 +992,9 @@ p {
         min-width: 300px;
     }
 }
+
+/* @media screen and (max-height : 800px) {
+    .result_p_wrap{
+
+    }
+} */
