@@ -738,35 +738,96 @@ p {
 .question {
     margin: 5vh auto;
     text-align: center;
-    width: 25vw;
+    width: 40vw;
     min-width: 250px;
     color: #fff;
 }
 
-.ans_button {
+.ansbutton_warp{
     width: 50vw;
+    min-width: 321px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+.left_angle,.right_angle{
+    width: 10px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left_angle{
+    background-image: url(../img/left_angle.svg);
+}
+.right_angle{
+    background-image: url(../img/right_angle.svg);
+}
+.ans_button {
+    width: 100%;
     min-width: 300px;
-    height: 10vh;
+    height: 60px;
     padding: 10px;
     text-align: center;
     color: #fff;
-    border: 1px solid #dcbd64;
+    border-top: 1px solid #dcbd64;
+    border-bottom: 1px solid #dcbd64;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2vh;
     cursor: pointer;
 }
 
-.ans_button:last-child {
+
+.ansbutton_wrap:last-child {
     margin-bottom: 0;
 }
 
 .ans_button:hover {
-
     background: linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%);
-    transition-duration: 300ms;
 }
+.stars{
+    margin: 20px auto;
+    width: 50vw;
+    min-width: 300px;
+    height: 18px;
+}
+.left_star,.right_star{
+    height: 18px;
+    width: 18px;
+    background-image: url(../img/star.svg);
+}
+.left_star{
+    float: left;
+}
+.right_star{
+    float: right;
+}
+
+/* 결과페이지 */
+.result{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/result_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.result_frame{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-height: 681px;
+    background-image: url(../img/result_frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 반응형 */
 
 @media screen and (max-width : 768px) {
     .bg_pattern {
