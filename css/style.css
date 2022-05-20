@@ -665,10 +665,6 @@ p {
 
 .test_container {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 #back {
@@ -757,6 +753,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-bottom: 2vh;
+    cursor: pointer;
 }
 
 .ans_button:last-child {

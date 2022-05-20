@@ -8,12 +8,13 @@
     <title>나와 어울리는 보석찾기</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+
 </head>
 
 <body>
     <div class="container">
         <!-- 메인페이지 -->
-        <article class="main">
+        <article class="main" id="main">
             <div class="top">
             </div>
             <div class="tit">
@@ -26,7 +27,7 @@
                 </h2>
                 <div class="tit_bottom"></div>
             </div>
-            <div class="button">
+            <div class="button" id="startTest" onclick="startTest()">
                 테스트 시작하기
             </div>
             <div class="footer">
@@ -49,7 +50,7 @@
             <div class="bg_pattern"></div>
         </article>
         <!-- 설문페이지 -->
-        <article class="test">
+        <article class="test" id="test">
             <div class="test_container">
                 <div class="testtop">
                     <button type="button" id="back" onclick=""></button>
@@ -80,5 +81,5 @@
         <article class="result"></article>
     </div>
 </body>
-
-</html지
+<script src="./js/showAndHide.js"></script>
+</html>
