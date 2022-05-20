@@ -1,0 +1,1 @@
+var get = document.getElementById()
