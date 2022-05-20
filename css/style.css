@@ -718,7 +718,7 @@ p {
 .q_innerbox::before {
     content: '"';
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 0;
     float: left;
     margin-right: 10px;
@@ -727,7 +727,7 @@ p {
 .q_innerbox::after {
     content: '"';
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     float: right;
     line-height: 0;
     margin-left: 10px;
