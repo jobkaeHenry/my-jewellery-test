@@ -599,6 +599,7 @@ p {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/bgpattern_tbl.png);
@@ -616,6 +617,7 @@ p {
     line-height: 50px;
     margin-bottom: 40px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .footer {
