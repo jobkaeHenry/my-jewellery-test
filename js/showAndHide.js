@@ -1,15 +1,14 @@
-
+// 화면넘기기
 var main = document.getElementById("main");
 var test = document.getElementById("test");
-var result = document.getElementById("result")
-var resultShare = document.getElementById("result_share")
-// var ansBtn = document.getElementsByClassName("ans_button")
-// var lfAngle = document.getElementById("left_angle")
-// var riAngle = document.getElementById("right_angle")
+var result = document.getElementById("result");
+var resultShare = document.getElementById("result_share");
+
 
 const startTest=()=>{
   main.style.display="none";
   test.style.display="flex";
+  next()
 }
 
 const backToMain=()=>{
@@ -23,13 +22,11 @@ const viewResult=()=>{
   resultShare.style.display="block"
 }
 
+// 마우스오버
+var lfAngle = document.getElementsByClassName("left_angle");
+var riAngle = document.getElementsByClassName("right_angle");
 
-// const mouseHover=()=>{
-//     lfAngle.style.backgroundImage="url(../img/left_angle_filled.svg)"
-//     riAngle.style.backgroundImage="url(../img/right_angle_filled.svg)"
-// }
-
-// const mouseOut=()=>{
-//   lfAngle.style.backgroundImage="url(../img/left_angle.svg)"
-//   riAngle.style.backgroundImage="url(../img/right_angle.svg)"
-// }
+function mouseHover(){
+    lfAngle.className="left_angle_filled"
+    riAngle.className="right_angle_filled"
+}

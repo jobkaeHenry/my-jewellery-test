@@ -55,30 +55,32 @@
                 <div class="testtop">
                     <button type="button" id="back" onclick="javascript: backToMain()"></button>
                     <div class="progress">
-                        <p>1/12</p>
+                        <p id="howMuchNum">1/12</p>
                         <div class="progressbar">
-                            <div class="howmuch"></div>
+                            <div class="howMuch"></div>
                         </div>
                     </div>
                 </div>
                 <div class="testmid">
                     <img src="./img/testLogo.svg" alt="로고이미지">
-                    <div class="question h5 bold">
+                    <div class="question h5 bold" id="question">
                         첫 만남에 느낌이 좋았던 그 사람!
                         이후 연락이 오지않는다면?
                     </div>
                     <div class="ansbutton_warp">
                         <div class="left_angle"></div>
-                        <div id="ans_01" class="ans_button" onclick="javascript:viewResult()">
-                            <span class="q_innerbox">먼저 연락해서 시간있냐고 물어본다</span>
-                        </div>
+
+                        <input type="hidden" value="EI" id="whatType">
+                        <button id="ans_01" class="ans_button">
+                            <span class="q_innerbox" id="a" onclick="javascript:next()"></span>
+                        </button>
                         <div class="right_angle"></div>
                     </div>
                     <div class="ansbutton_warp">
                         <div class="left_angle"></div>
-                        <div id="ans_02" class="ans_button" onclick="javascript:viewResult()">
-                            <span class="q_innerbox">자존심이 허락안해... 그냥 지나간다</span>
-                        </div>
+                        <button id="ans_02" class="ans_button">
+                            <span class="q_innerbox" id="b" onclick="javascript:next()"></span>
+                        </button>
                         <div class="right_angle"></div>
                     </div>
                 </div>
@@ -88,6 +90,10 @@
                 </div>
             </div>
         </article>
+        <input type="hidden" value="0" id="EI">
+        <input type="hidden" value="0" id="SN">
+        <input type="hidden" value="0" id="TF">
+        <input type="hidden" value="0" id="JP">
         <!-- 결과페이지 -->
         <article class="result" id="result">
             <div class="result_card">
@@ -159,6 +165,10 @@
         </div class="footer">
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="./js/getValue.js"></script>
 <script src="./js/showAndHide.js"></script>
+
 
 </html>

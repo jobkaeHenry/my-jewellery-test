@@ -444,6 +444,10 @@ select,
 textarea {
     color: #222;
 }
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
 
 
 ::-moz-selection {
@@ -710,11 +714,12 @@ p {
     margin-bottom: 30px;
 }
 
-.howmuch {
+.howMuch {
     width: 10%;
     height: 100%;
     border-radius: 20px;
     background-color: #dcbd64;
+    transition-duration: 300ms;
 }
 
 .testmid {
@@ -769,7 +774,7 @@ p {
 }
 
 .left_angle,
-.right_angle {
+.right_angle,.right_angle_filled,.left_angle_filled {
     width: 10px;
     height: 60px;
     background-repeat: no-repeat;
@@ -779,9 +784,15 @@ p {
 .left_angle {
     background-image: url(../img/left_angle.svg);
 }
-
 .right_angle {
     background-image: url(../img/right_angle.svg);
+}
+
+.right_angle_filled{
+    background-image: url(../img/right_angle_filled.svg);
+}
+.left_angle_filled{
+    background-image: url(../img/left_angle_filled.svg);
 }
 
 .ans_button {
