@@ -8,13 +8,15 @@
     <title>나와 어울리는 보석찾기</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
+    <script src="./js/getValue.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <!-- 메인페이지 -->
-        <article class="main" id="main">
+        <section class="main" id="main">
             <div class="top">
             </div>
             <div class="tit">
@@ -45,12 +47,12 @@
                         <div class="facebook"></div>
                     </a>
                 </div>
-            </div class="footer">
+            </div>
             <div class="bottom"></div>
             <div class="bg_pattern"></div>
-        </article>
+        </section>
         <!-- 설문페이지 -->
-        <article class="test" id="test">
+        <section class="test" id="test">
             <div class="test_container">
                 <div class="testtop">
                     <button type="button" id="back" onclick="javascript: backToMain()"></button>
@@ -63,7 +65,7 @@
                 </div>
                 <div class="testmid">
                     <img src="./img/testLogo.svg" alt="로고이미지">
-                    <div class="question h5 bold" id="question">
+                    <div class="question h5 bold" id="sheet">
                         첫 만남에 느낌이 좋았던 그 사람!
                         이후 연락이 오지않는다면?
                     </div>
@@ -72,14 +74,14 @@
 
                         <input type="hidden" value="EI" id="whatType">
                         <button id="ans_01" class="ans_button">
-                            <span class="q_innerbox" id="a" onclick="javascript:next()"></span>
+                            <span class="q_innerbox" id="a"></span>
                         </button>
                         <div class="right_angle"></div>
                     </div>
                     <div class="ansbutton_warp">
                         <div class="left_angle"></div>
                         <button id="ans_02" class="ans_button">
-                            <span class="q_innerbox" id="b" onclick="javascript:next()"></span>
+                            <span class="q_innerbox" id="b"></span>
                         </button>
                         <div class="right_angle"></div>
                     </div>
@@ -89,13 +91,13 @@
                     <div class="right_star"></div>
                 </div>
             </div>
-        </article>
+        </section>
         <input type="hidden" value="0" id="EI">
         <input type="hidden" value="0" id="SN">
         <input type="hidden" value="0" id="TF">
         <input type="hidden" value="0" id="JP">
         <!-- 결과페이지 -->
-        <article class="result" id="result">
+        <section class="result" id="result">
             <div class="result_card">
                 <div class="stars">
                     <div class="left_star"></div>
@@ -114,9 +116,9 @@
                     <div class="result_p_wrap">
                         <div>
                             <div class="star_line">
-                                <picture class="sm_star"></picture>
+                                <div class="sm_star"></div>
                                 <div class="star_centerline"></div>
-                                <picture class="sm_star"></picture>
+                                <div class="sm_star"></div>
                             </div>
                             <div class="rank_wrap">
                                 <div class="bold">희귀성</div>
@@ -129,11 +131,11 @@
 
                         <div>
                             <div class="star_line mb-10">
-                                <picture class="sm_star"></picture>
+                                <div class="sm_star"></div>
                                 <div class="star_centerline_srt"></div>
                                 <p class="gold bold">특징</p>
                                 <div class="star_centerline_srt"></div>
-                                <picture class="sm_star"></picture>
+                                <div class="sm_star"></div>
                             </div>
                             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, possimus.</div>
                         </div>
@@ -146,7 +148,7 @@
                     <div class="right_star"></div>
                 </div>
             </div>
-        </article>
+        </section>
         <div class="footer" id="result_share">
             <p class="gold center">
                 SNS 공유하기
@@ -162,13 +164,11 @@
                     <div class="facebook"></div>
                 </a>
             </div>
-        </div class="footer">
+        </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script src="./js/getValue.js"></script>
-<script src="./js/showAndHide.js"></script>
+
+
 
 
 </html>
