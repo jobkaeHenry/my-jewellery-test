@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
+
+    <script src="./js/circletype.min.js" defer></script>
     <script src="./js/getValue.js" defer></script>
 </head>
 
@@ -21,7 +23,7 @@
             </div>
             <div class="tit">
                 <div class="tit_top"></div>
-                <h2 class="arc_txt gold h5 regular mb-10">
+                <h2 class="arc_txt gold h5 regular mb-10" id="circleType">
                     심리테스트로 나를 닮은 보석찾기
                 </h2>
                 <h3 class="bold gold h3">
@@ -55,7 +57,7 @@
         <section class="test" id="test">
             <div class="test_container">
                 <div class="testtop">
-                    <button type="button" id="back" onclick="javascript: backToMain()"></button>
+                    <button type="button" id="back" onclick="javascript: back()"></button>
                     <div class="progress">
                         <p id="howMuchNum">1/12</p>
                         <div class="progressbar">

@@ -508,7 +508,7 @@ textarea {
 }
 
 .h5 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 p {
@@ -691,7 +691,7 @@ p {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 50px;
+    margin-bottom: 2vh;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -974,6 +974,9 @@ p {
     }
 
     .h4 {
+        font-size: 1rem;
+    }
+    .h5{
         font-size: 1rem;
     }
 

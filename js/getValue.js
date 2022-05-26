@@ -1,3 +1,10 @@
+//----------써클텍스트------------
+
+const circleType = new CircleType(document.getElementById('circleType'));
+
+
+circleType.radius(1100);
+
 //-------------------문제넘기기-----------------
 
 var questNum = 0;
@@ -32,17 +39,17 @@ var questionSheet = {
   },
 
   1: {
-    "sheet": "parapara",
-    "type": "EI",
-    "a": "a1",
-    "b": "a2",
-  },
-
-  2: {
-    "sheet": "첫 만남에 ! 이후 연락이 오지않느낌이 좋았던 그 사람는다면?",
+    "sheet": "q2",
     "type": "EI",
     "a": "a2",
     "b": "b2",
+  },
+
+  2: {
+    "sheet": "q3",
+    "type": "EI",
+    "a": "a3",
+    "b": "b3",
   },
 }
 
@@ -67,8 +74,8 @@ const backToMain = () => {
   test.style.display = "none";
 }
 
-// const viewResult=()=>{
-//   result.style.display="flex"
-//   test.style.display="none"
-//   resultShare.style.display="block"
-// }
+const viewResult=()=>{
+  result.style.display="flex"
+  test.style.display="none"
+  resultShare.style.display="block"
+}
