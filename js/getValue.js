@@ -22,7 +22,6 @@ var next = () => {
     $("#result_card").css({'background-image': mbtiResult[mbti]["backgroundImage"]})
     $("#result_frame").css({'background-image': mbtiResult[mbti]["gemStoneFrame"]})
     $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"])
-    alert(mbtiResult[mbti]["gemStone"])
 
   } else {
     $("#sheet").html(questionSheet[questNum]["sheet"]);
