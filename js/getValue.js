@@ -5,7 +5,7 @@ circleType.radius(1100);
 
 
 //-------------------문제넘기기-----------------
-
+var userName = "이용자"
 var questNum = 0;
 var next = () => {
   if (questNum == 12) {
@@ -135,7 +135,7 @@ var mbtiResult = {
     "subtitle": "조명에 따라 색이 변하는",
     "title": "알렉산드라이트",
     "subscription": "'알렉산드라이트'는 태양빛 아래에서는 에메랄드, 밤의 촛불 <br>아래에서는 루비로 변하는 <br>신비한 보석이에요",
-    "character":"즉흥적이고 유연하며, 순발력이 뛰어난 ‘ㅇㅇ님’과 정말 찰떡인 <br>보석이네요!",
+    "character":"즉흥적이고 유연하며, 순발력이 뛰어난 '"+userName+"' 님과 정말 찰떡인 <br>보석이네요!",
     "backgroundImage":"url(../img/result_bg_purple.png)",
     "gemStoneFrame": "url(../img/result_frame_purple.png",
     "gemStoneImage":"./img/alexandrite.gif",
