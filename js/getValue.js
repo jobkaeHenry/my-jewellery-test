@@ -1,9 +1,12 @@
 //----------써클텍스트------------
 
 const circleType = new CircleType(document.getElementById('circleType'));
-
-
+const result_subtitle = new CircleType(document.getElementById('result_subtitle'));
+const result_title = new CircleType(document.getElementById('result_title'));
 circleType.radius(1100);
+result_title.radius(900)
+result_subtitle.radius(300)
+
 
 //-------------------문제넘기기-----------------
 
