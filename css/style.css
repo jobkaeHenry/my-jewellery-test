@@ -3,13 +3,13 @@
 
 /* image preload */
 
-body::after{
-    content: url(../img/result_frame_green.png) url(../img/result_frame_purple.png);
+body::after {
+    position: absolute;
     width: 0;
     height: 0;
     overflow: hidden;
     z-index: -1;
-    position: absolute;
+    content: url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png);
 }
 
 * {
