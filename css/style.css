@@ -864,7 +864,7 @@ p {
     min-height: 730px;
     border-radius: 15px;
     border: 2px solid #dcbd64;
-    background-image: url(../img/result_bg_green.jpg);
+    /* background-image: url(../img/result_bg_green.jpg); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -886,7 +886,7 @@ p {
     max-height: 680px;
     text-align: center;
     color: #dcbd64;
-    background-image: url(../img/result_frame_green.png);
+    /* background-image: url(../img/result_frame_green.png); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
