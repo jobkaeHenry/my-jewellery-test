@@ -19,9 +19,13 @@ var next = () => {
     $("#result_title").html(mbtiResult[mbti]["title"]);
     $("#detail").html(mbtiResult[mbti]["subscription"]);
     $("#character").html(mbtiResult[mbti]["character"]);
-    $("#result_card").css({'background-image': mbtiResult[mbti]["backgroundImage"]})
-    $("#result_frame").css({'background-image': mbtiResult[mbti]["gemStoneFrame"]})
-    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"])
+    $("#result_card").css({
+      'background-image': mbtiResult[mbti]["backgroundImage"]
+    });
+    $("#result_frame").css({
+      'background-image': mbtiResult[mbti]["gemStoneFrame"]
+    });
+    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"]);
 
   } else {
     $("#sheet").html(questionSheet[questNum]["sheet"]);
@@ -34,7 +38,9 @@ var next = () => {
   }
 };
 
+// ---------클릭함수----------------------
 $("#ans_01").click(function () {
+  hoverFunctionA();
   let type = $("#whatType").val();
   let preValue = $("#" + type).val();
   $("#" + type).val(parseInt(preValue) + 1);
@@ -42,8 +48,57 @@ $("#ans_01").click(function () {
 });
 
 $("#ans_02").click(function () {
+  hoverFunctionB()
   next()
 });
+
+
+// -------------클릭시 색상변경------------------
+var hoverFunctionA = () => {
+  $("#ans_01").css({
+    'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
+  })
+  $("#upLeft").css({
+    'background-image': 'url(../img/left_angle_filled.svg)'
+  })
+  $("#upRight").css({
+    'background-image': 'url(../img/right_angle_filled.svg)'
+  })
+  setTimeout(function () {
+    $("#ans_01").css({
+      'background': 'none'
+    })
+    $("#upLeft").css({
+      'background-image': 'url(../img/left_angle.svg)'
+    })
+    $("#upRight").css({
+      'background-image': 'url(../img/right_angle.svg)'
+    })
+  }, 100)
+}
+
+var hoverFunctionB = () => {
+  $("#ans_02").css({
+    'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
+  })
+  $("#downLeft").css({
+    'background-image': 'url(../img/left_angle_filled.svg)'
+  })
+  $("#downRight").css({
+    'background-image': 'url(../img/right_angle_filled.svg)'
+  })
+  setTimeout(function () {
+    $("#ans_02").css({
+      'background': 'none'
+    })
+    $("#downLeft").css({
+      'background-image': 'url(../img/left_angle.svg)'
+    })
+    $("#downRight").css({
+      'background-image': 'url(../img/right_angle.svg)'
+    })
+  }, 100)
+}
 
 //--------------------문제 JSON------------------------
 var questionSheet = {
@@ -134,11 +189,11 @@ var mbtiResult = {
     "subtitle": "조명에 따라 색이 변하는",
     "title": "알렉산드라이트",
     "subscription": "'알렉산드라이트'는 태양빛 아래에서는 에메랄드, 밤의 촛불 <br>아래에서는 루비로 변하는 <br>신비한 보석이에요",
-    "character":"즉흥적이고 유연하며, 순발력이 뛰어난 '"+userName+"' 님과 정말 찰떡인 <br>보석이네요!",
-    "backgroundImage":"url(./img/result_bg_purple.jpg)",
+    "character": "즉흥적이고 유연하며, 순발력이 뛰어난 '" + userName + "' 님과 정말 찰떡인 <br>보석이네요!",
+    "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
-    "gemStoneImage":"./img/alexandrite.gif",
-  }
+    "gemStoneImage": "./img/alexandrite.gif",
+  },
 }
 
 
