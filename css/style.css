@@ -9,7 +9,21 @@ body::after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png);
+    content:
+    url(../img/left_angle.svg)
+    url(../img/left_angle_filled.svg) 
+    url(../img/right_angle.svg)
+    url(../img/right_angle_filled.svg)
+    url(../img/gemstone_ring.png)
+    url(../img/star.svg)
+
+
+    url(../img/result_bg_green.jpg)
+    url(../img/result_bg_purple.jpg)
+    url(../img/result_frame_green.png)
+    url(../img/result_frame_purple.png)
+
+    ;
 }
 
 * {
