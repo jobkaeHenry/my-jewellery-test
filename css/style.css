@@ -875,7 +875,7 @@ p {
     height: 90vh;
     min-width: 320px;
     max-width: 520px;
-    min-height: 730px;
+    min-height: 785px;
     border-radius: 15px;
     border: 2px solid #dcbd64;
     background-image: url(../img/result_bg_green.jpg);
@@ -898,6 +898,7 @@ p {
     width: 90%;
     height: 100%;
     max-height: 680px;
+    padding-bottom: 40px;
     text-align: center;
     color: #dcbd64;
     background-image: url(../img/result_frame_green.png);
@@ -973,7 +974,8 @@ p {
 
 #result_share {
     display: none;
-    margin: 30px auto;
+    margin: 0px auto;
+    padding: 30px 0;
 }
 
 
