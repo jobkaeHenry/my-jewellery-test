@@ -639,7 +639,7 @@ p {
 
 .bg_pattern {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 0;
     background-repeat: no-repeat;
