@@ -10,20 +10,7 @@ body::after {
     overflow: hidden;
     z-index: -1;
     content:
-    url(../img/left_angle.svg)
-    url(../img/left_angle_filled.svg) 
-    url(../img/right_angle.svg)
-    url(../img/right_angle_filled.svg)
-    url(../img/gemstone_ring.png)
-    url(../img/star.svg)
-
-
-    url(../img/result_bg_green.jpg)
-    url(../img/result_bg_purple.jpg)
-    url(../img/result_frame_green.png)
-    url(../img/result_frame_purple.png)
-
-    ;
+        url(../img/left_angle.svg) url(../img/left_angle_filled.svg) url(../img/right_angle.svg) url(../img/right_angle_filled.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png);
 }
 
 * {
@@ -581,7 +568,7 @@ p {
 
 .main {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -639,7 +626,7 @@ p {
 
 .bg_pattern {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     position: absolute;
     z-index: 0;
     background-repeat: no-repeat;
@@ -702,7 +689,7 @@ p {
 /* 테스트페이지 */
 .test {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     display: none;
 }
 
@@ -866,7 +853,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 }
 
 #result_card {
@@ -987,9 +974,18 @@ p {
     .bg_pattern {
         display: block;
     }
+
+    .test_container {
+        margin: 0 auto;
+        padding-top: -50px;
+        height: 100dvh;
+        justify-content: none;
+    }
 }
 
 @media screen and (max-width : 375px) {
+
+
 
     .bg_pattern {
         background-image: url(../img/bgpattern.png);
