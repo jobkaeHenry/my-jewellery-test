@@ -25,13 +25,14 @@ body::after {
         url(../img/result_frame_purple.png)
         url(../img/result_frame_teal.png)
         url(../img/gemstone1.png)         url(../img/gemstone2.png)         url(../img/gemstone11.png)
+        ;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR';
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 
