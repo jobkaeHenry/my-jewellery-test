@@ -60,7 +60,7 @@ var mbtiResult = {
   "INTP": {
     "subtitle": "보랏빛 아름다움,",
     "title": "자수정",
-    "subscription": "",
+    "subscription": "자수정의 보라색은 귀족을 상징하는 돌로 귀하게 여겨졌으며, 중세 왕관을 장식하는 귀한 보석으로 사용됬어요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
@@ -68,18 +68,18 @@ var mbtiResult = {
   },
 
   "INFJ": {
-    "subtitle": "보석의 왕,",
+    "subtitle": "보석의 왕, 선명한 붉은색의",
     "title": "루비",
-    "subscription": "",
+    "subscription": "타오르는 불꽃같은 사랑을 상징하는 루비는 그 강렬한 붉은빛에 한번 빠지면 쉽게 헤어나오기 힘들 정도에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
     "gemStoneImage": "./img/gemstone7.png",
   },
   "INFP": {
-    "subtitle": "강렬한 붉은빛의,",
+    "subtitle": "적색의 풍요로움,",
     "title": "루벌라이트",
-    "subscription": "",
+    "subscription": "자칫 올드해 보일 수 있는 강렬한 붉은색의 루비와는 다르게 루벌라이트는 적색, 자색, 분홍색이 조화롭게 섞여있는 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
@@ -88,16 +88,16 @@ var mbtiResult = {
   "ESTJ": {
     "subtitle": "모든 색을 가진 보석",
     "title": "블루오팔",
-    "subscription": "",
+    "subscription": "바라보는 각도에 따라 오묘하게 색이 변하는 오팔, 그 중에서도 블루 오팔은 굉장히 희귀한 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_blue.jpg)",
     "gemStoneFrame": "url(./img/result_frame_blue.png)",
     "gemStoneImage": "./img/gemstone9.png",
   },
   "ESTP": {
-    "subtitle": "인어의 보물,",
+    "subtitle": "푸른 바다를 품은 보석,",
     "title": "아쿠아마린",
-    "subscription": "",
+    "subscription": "'아쿠아마린'이라는 이름만 들어도 푸른 바다가 연상되는 아쿠아마린은 바다와 관련된 많은 전설을 가진 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_blue.jpg)",
     "gemStoneFrame": "url(./img/result_frame_blue.png)",
@@ -107,7 +107,7 @@ var mbtiResult = {
   "ESFJ": {
     "subtitle": "상큼한 레몬빛의,",
     "title": "시트린",
-    "subscription": "",
+    "subscription": "이름만 들어도 상큼한 노란빛의 시트린은, 수정종류 중에서 가장 비싼 보석이고, 가장 인기있는 수정이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_orange.jpg)",
     "gemStoneFrame": "url(./img/result_frame_orange.png)",
@@ -116,7 +116,7 @@ var mbtiResult = {
   "ESFP": {
     "subtitle": "태양을 닮은 보석,",
     "title": "썬스톤",
-    "subscription": "",
+    "subscription": "태양을 닮은, 태양을 담은 보석인 썬스톤은 보는 방향에 따라 주황빛으로 반짝이는 따뜻한 느낌의 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_orange.jpg)",
     "gemStoneFrame": "url(./img/result_frame_orange.png)",
@@ -126,7 +126,7 @@ var mbtiResult = {
   "ENTJ": {
     "subtitle": "검은 대륙의 푸른별,",
     "title": "탄자나이트",
-    "subscription": "",
+    "subscription": "우아한 청색빛의 '탄자나이트'는 이름에서 알 수 있듯, 지구상 오직 아프리카 탄자니아에서만 산출되는 귀한 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
@@ -145,7 +145,7 @@ var mbtiResult = {
   "ENFJ": {
     "subtitle": "사랑과 치유의보석,",
     "title": "쿤자이트",
-    "subscription": "",
+    "subscription": "분홍색과 보라색의 조화가 아름다운 '쿤자이트'는 비교적 최근인 1902년에 발견된 신비로운 보석이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
@@ -154,7 +154,7 @@ var mbtiResult = {
   "ENFP": {
     "subtitle": "장미를 닮은 보석,",
     "title": "잉카로즈",
-    "subscription": "",
+    "subscription": "이름에서 알 수 있듯 아름다운 장미빛을 가진 잉카로즈의 본명은 '로도크로사이트'에요 잉카로즈 특유의 문양이 매력포인트랍니다",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",

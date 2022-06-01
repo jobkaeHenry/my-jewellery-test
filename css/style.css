@@ -580,6 +580,9 @@ p {
 .center {
     text-align: center;
 }
+.lh-18{
+    line-height: 20px;
+}
 
 /* v페이지시작------------------ */
 
