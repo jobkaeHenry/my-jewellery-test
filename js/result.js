@@ -107,7 +107,7 @@ var mbtiResult = {
   "ESFJ": {
     "subtitle": "상큼한 레몬빛의,",
     "title": "시트린",
-    "subscription": "이름만 들어도 상큼한 노란빛의 시트린은, 수정종류 중에서 가장 비싼 보석이고, 가장 인기있는 수정이에요",
+    "subscription": "이름만 들어도 상큼한 노란빛의 '시트린'은, 수정 종류 중 가장 비싼 보석이고, 가장 인기있는 수정이에요",
     "character": "' " + userName + "' ",
     "backgroundImage": "url(./img/result_bg_orange.jpg)",
     "gemStoneFrame": "url(./img/result_frame_orange.png)",

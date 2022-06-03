@@ -588,7 +588,7 @@ p {
 
 .container {
     width: 100%;
-    height: 110%;
+    height: 100%;
     background-color: #0f0f0f;
 }
 
@@ -879,7 +879,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #result_card {
