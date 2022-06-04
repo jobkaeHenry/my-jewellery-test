@@ -884,6 +884,7 @@ p {
 
 #result_card {
     margin: 0 auto;
+    margin-top: 20px;
     width: 95vw;
     height: 90vh;
     min-width: 320px;
@@ -977,6 +978,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: -10px;
     margin-bottom: 20px;
 }
 
