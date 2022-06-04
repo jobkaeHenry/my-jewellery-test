@@ -10,30 +10,7 @@ body::after {
     overflow: hidden;
     z-index: -1;
     content:
-        url(../img/left_angle.svg) 
-        url(../img/left_angle_filled.svg) 
-        url(../img/right_angle.svg) 
-        url(../img/right_angle_filled.svg) 
-        url(../img/gemstone_ring.png) 
-        url(../img/star.svg) 
-
-        url(../img/result_bg_green.jpg) 
-        url(../img/result_bg_purple.jpg) 
-        url(../img/result_bg_teal.jpg) 
-        url(../img/result_bg_blue.jpg) 
-        url(../img/result_bg_pink.jpg) 
-        url(../img/result_bg_orange.jpg) 
-
-        url(../img/result_frame_green.png) 
-        url(../img/result_frame_purple.png)
-        url(../img/result_frame_teal.png)
-        url(../img/result_frame_blue.png)
-        url(../img/result_frame_pink.png)
-        url(../img/result_frame_orange.png)
-
-
-        url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png)
-        ;
+        url(../img/left_angle.svg) url(../img/left_angle_filled.svg) url(../img/right_angle.svg) url(../img/right_angle_filled.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
 }
 
 * {
@@ -486,6 +463,9 @@ button {
     border: none;
 }
 
+button {
+    display: block;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -530,6 +510,10 @@ textarea {
 
 .gold {
     color: #dcbd64;
+}
+
+.white {
+    color: #fff;
 }
 
 .h2 {
@@ -580,7 +564,8 @@ p {
 .center {
     text-align: center;
 }
-.lh-18{
+
+.lh-18 {
     line-height: 20px;
 }
 
@@ -993,6 +978,37 @@ p {
     padding: 30px 0;
 }
 
+#saveAsImg {
+    margin: 0 auto;
+    width: 200px;
+    height: 46px;
+    background-color: #968246;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    animation: btnMove 300ms infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes btnMove {
+    from {
+        transform: translate(0,2px);
+    }
+
+    to {
+        transform: translate(0,-2px);
+    }
+}
+
+#saveAsImg>img {
+    padding-bottom: 4px;
+}
+
+#saveAsImg:hover {
+    border: 1px solid #D4B864;
+    background-color: transparent;
+}
 
 
 

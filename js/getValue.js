@@ -129,3 +129,20 @@ const viewResultPage = () => {
   test.style.display = "none"
   resultShare.style.display = "block"
 }
+
+//  다운로드함수
+
+function downImg(){
+  html2canvas($("#result_card")[0]).then(function(canvas){
+      var myImage = canvas.toDataURL();
+      downloadURI(myImage, "나의 보석 타입.jpg") 
+  });
+}
+
+function downloadURI(uri, name){
+  var link = document.createElement("a")
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+}

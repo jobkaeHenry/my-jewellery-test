@@ -15,6 +15,7 @@
     <script src="./js/getValue.js" defer></script>
     <script src="./js/question.js" defer></script>
     <script src="./js/result.js" defer></script>
+    <script src="./js/html2canvas.min.js" defer></script>
 </head>
 
 <body>
@@ -107,7 +108,7 @@
         <input type="hidden" value="0" id="JP">
         <!-- 결과페이지 -->
         <section class="result" id="result">
-            <div id="result_card" class="mt">
+            <div id="result_card">
                 <div class="stars">
                     <div class="left_star"></div>
                     <div class="right_star"></div>
@@ -129,13 +130,13 @@
                                 <div class="star_centerline"></div>
                                 <div class="sm_star"></div>
                             </div>
-                            <div class="rank_wrap">
+                            <!-- <div class="rank_wrap">
                                 <div class="bold">
                                     희귀성
                                     <span id="rank_stars" class="gold lh-18">
                                         ★★☆
                                     </span>
-                                    
+
                                 </div>
                                 <div class="bold">
                                     단단함
@@ -149,9 +150,8 @@
                                     <span id="rank_stars" class="gold lh-18">
                                         ★★☆
                                     </span>
-
                                 </div>
-                            </div>
+                            </div> -->
                             <div id="detail" class="mb-20 lh-18">Lorem ipsum dolor sit amet consectetur, adipisicing
                                 elit.
                                 Pariatur, saepe.</div>
@@ -169,16 +169,25 @@
                                 Ex, possimus.</div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="stars">
                     <div class="left_star"></div>
                     <div class="right_star"></div>
                 </div>
+
             </div>
+
         </section>
+
         <div class="footer" id="result_share">
+            <!-- <button id="saveAsImg" class="white center">
+                <img src="./img/saveBtn_white.png" alt="저장하기">
+                사진으로 저장하기
+            </button> -->
+            <button id="saveAsImg" class="white center" onclick="javascript:downImg()">
+                <img src="./img/saveBtn_white.png" alt="저장하기">
+                사진으로 저장하기
+            </button>
             <p class="gold center">
                 SNS 공유하기
             </p>
