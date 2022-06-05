@@ -62,8 +62,19 @@
         <!-- 이름 입력페이지 -->
         <section class="nameInput" id="nameInput">
             <div class="top"></div>
-            <input type="text" id="userName">
-            <button onclick="javascript:startTest()">다음</button>
+
+
+            <form id="form" onsubmit="return false;">
+                <input type="text" id="userName"/>
+                <input type="submit" onclick="startTest();" />
+                <input type="hidden" value="0" id="savedVal">
+            </form>
+        
+<!-- 
+            <input type="text" value="" id="userName">
+            <button onclick="javascript:startTest()">다음</button> -->
+
+
             <div class="bottom"></div>
             <div class="bg_pattern"></div>
         </section>

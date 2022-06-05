@@ -103,7 +103,6 @@ var hoverFunctionB = () => {
 
 
 
-
 // -------------------화면넘기기 함수-----------------------
 
 
@@ -117,12 +116,6 @@ var nameInput = document.getElementById("nameInput")
 var viewUserName = () => {
   main.style.display = "none";
   nameInput.style.display = "flex";
-}
-
-var startTest = () => {
-  nameInput.style.display = "none";
-  test.style.display = "flex";
-  next();
 }
 
 const backToMain = () => {
