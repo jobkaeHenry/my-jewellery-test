@@ -1,8 +1,14 @@
-var userName
-var getUserName = () =>{
-userName = document.getElementById("userName").val
-$("#userName").hide()
+// -----------------------이름받기--------------------------
+function startTest() {
+  var EnteredUserName = document.getElementById("userName").value;
+  $("#savedVal").val(EnteredUserName);
+  nameInput.style.display = "none";
+  test.style.display = "flex";
+  next();
 }
+
+
+
 // -----------------결과JSON--------------------------
 
 
