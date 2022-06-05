@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나와 어울리는 보석찾기</title>
+
+    <title>나와 어울리는 보석찾기 | Jewelry test</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
-
     <script src="./js/circletype.min.js" defer></script>
     <script src="./js/getValue.js" defer></script>
     <script src="./js/question.js" defer></script>
@@ -34,7 +34,7 @@
                 </h3>
                 <div class="tit_bottom"></div>
             </div>
-            <div class="button" id="startTest" onclick="javascript: startTest()">
+            <div class="button" id="startTest" onclick="javascript: viewUserName()">
                 테스트 시작하기
             </div>
             <div class="footer">
@@ -56,10 +56,19 @@
             <div class="bottom"></div>
             <div class="bg_pattern"></div>
         </section>
-        <!-- <section>
+
+
+
+        <!-- 이름 입력페이지 -->
+        <section class="nameInput" id="nameInput">
+            <div class="top"></div>
             <input type="text" id="userName">
-            <button onclick="javascript:getUserName()">다음</button>
-        </section> -->
+            <button onclick="javascript:startTest()">다음</button>
+            <div class="bottom"></div>
+            <div class="bg_pattern"></div>
+        </section>
+
+
         <!-- 설문페이지 -->
         <section class="test" id="test">
             <div class="test_container">
@@ -203,6 +212,10 @@
                 <a href="#">
                     <div class="facebook"></div>
                 </a>
+            </div>
+            <div class="contact">
+                <p class="gold center bold">오류 제보하기</p>
+                <p class=" gold center">1zzangjun@gmail.com</p>
             </div>
         </div>
     </div>

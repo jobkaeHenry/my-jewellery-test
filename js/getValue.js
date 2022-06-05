@@ -111,10 +111,16 @@ var main = document.getElementById("main");
 var test = document.getElementById("test");
 var result = document.getElementById("result");
 var resultShare = document.getElementById("result_share");
+var nameInput = document.getElementById("nameInput")
 
+
+var viewUserName = () => {
+  main.style.display = "none";
+  nameInput.style.display = "flex";
+}
 
 var startTest = () => {
-  main.style.display = "none";
+  nameInput.style.display = "none";
   test.style.display = "flex";
   next();
 }

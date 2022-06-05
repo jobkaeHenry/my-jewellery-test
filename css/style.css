@@ -12,11 +12,13 @@ body::after {
     content:
         url(../img/left_angle.svg) url(../img/left_angle_filled.svg) url(../img/right_angle.svg) url(../img/right_angle_filled.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
 }
-
+body {
+    font-family:  ;
+  }
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans KR';
+    font-family: 'Noto Sans KR',Helvetica, Tahoma, Arial, sans-serif, 'PingFang SC';
     box-sizing: border-box;
 }
 
@@ -696,6 +698,20 @@ p {
 }
 
 
+/* 이름 입력페이자 */
+#nameInput {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#userName{
+    z-index: 1;
+}
+
 
 /* 테스트페이지 */
 .test {
@@ -711,7 +727,7 @@ p {
     justify-content: center;
 }
 
-#back {
+/* #back {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -720,7 +736,7 @@ p {
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-}
+} */
 
 
 .progress p {
@@ -977,7 +993,7 @@ p {
 #result_share {
     display: none;
     margin: 0px auto;
-    padding: 30px 0;
+    padding-bottom: 30px;
 }
 
 #downloadWrap{
@@ -1019,6 +1035,10 @@ p {
 #saveAsImg:hover {
     border: 1px solid #D4B864;
     background-color: transparent;
+}
+.contact{
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 
