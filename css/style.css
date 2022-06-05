@@ -998,18 +998,17 @@ p {
     animation-direction: alternate;
     animation-timing-function: ease;
     position: fixed;
-    top: 740px;
-    left: 50px;
-
+    bottom: 10px;
+    left: 50%;
 }
 
 @keyframes btnMove {
     from {
-        transform: translate(0, 2px);
+        transform: translate(-50%, 2px);
     }
 
     to {
-        transform: translate(0, -2px);
+        transform: translate(-50%, -2px);
     }
 }
 
