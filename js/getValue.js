@@ -133,9 +133,9 @@ const viewResultPage = () => {
 //  다운로드함수
 
 function downImg(){
-  html2canvas($("#result_card")[0]).then(function(canvas){
+  html2canvas($("#downloadWrap")[0]).then(function(canvas){
       var myImage = canvas.toDataURL();
-      downloadURI(myImage, "나의 보석 타입.jpg") 
+      downloadURI(myImage, "my_type.jpg") 
   });
 }
 

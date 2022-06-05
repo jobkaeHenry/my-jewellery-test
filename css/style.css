@@ -868,8 +868,7 @@ p {
 }
 
 #result_card {
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
     width: 95vw;
     height: 90vh;
     min-width: 320px;
@@ -932,6 +931,9 @@ p {
     margin-top: 100px;
     margin-bottom: 5px;
 }
+#result_title{
+    line-height: 2.6rem;
+}
 
 .star_line {
     width: 100%;
@@ -978,6 +980,12 @@ p {
     padding: 30px 0;
 }
 
+#downloadWrap{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #0f0f0f;
+}
 #saveAsImg {
     margin: 0 auto;
     width: 200px;
@@ -989,15 +997,19 @@ p {
     animation: btnMove 300ms infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
+    position: fixed;
+    top: 740px;
+    left: 50px;
+
 }
 
 @keyframes btnMove {
     from {
-        transform: translate(0,2px);
+        transform: translate(0, 2px);
     }
 
     to {
-        transform: translate(0,-2px);
+        transform: translate(0, -2px);
     }
 }
 
