@@ -170,6 +170,7 @@ p {
     height: calc(var(--vh, 1vh) * 100);
     position: absolute;
     top: 0;
+    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/bgpattern_tbl.png);
@@ -187,11 +188,12 @@ p {
     line-height: 50px;
     margin-bottom: 40px;
     cursor: pointer;
-    z-index: 1;
+    position: relative;
+    z-index: 5;
 }
 
 .footer {
-    z-index: 2;
+    z-index: 5;
     width: 325px;
 }
 
@@ -204,7 +206,8 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    z-index: 1;
+    position: inherit;
+    z-index: 5;
 
 }
 
