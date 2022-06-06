@@ -223,6 +223,9 @@ p {
 
 
 /* 이름 입력페이자 */
+.form_wrap{
+    z-index: 2;
+}
 #nameInput {
     display: none;
     width: 100%;
