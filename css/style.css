@@ -170,7 +170,6 @@ p {
     height: calc(var(--vh, 1vh) * 100);
     position: absolute;
     top: 0;
-    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/bgpattern_tbl.png);
