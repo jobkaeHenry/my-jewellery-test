@@ -1,6 +1,6 @@
 // 카피링크
 
-function copyUrl (){
+function copyUrlOfWebSite (){
   navigator.clipboard.writeText(location.href).then(() => {
     console.log('success');
 });
