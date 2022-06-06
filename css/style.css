@@ -10,7 +10,7 @@ body::after {
     overflow: hidden;
     z-index: -1;
     content:
-        url(../img/left_angle.svg) url(../img/left_angle_filled.svg) url(../img/right_angle.svg) url(../img/right_angle_filled.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
+        url(../img/left_angle.svg) url(../img/right_angle.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
 }
 
 * {
@@ -19,7 +19,8 @@ body::after {
     font-family: 'Noto Sans KR', Helvetica, Tahoma, Arial, sans-serif, 'PingFang SC';
     box-sizing: border-box;
 }
-button{
+
+button {
     background-color: transparent;
     border: none;
 }
@@ -192,8 +193,9 @@ p {
 }
 
 .api {
-    margin: 3vh auto;
-    margin-top: 2vh;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
     width: 150px;
     height: 36px;
     display: flex;
@@ -203,8 +205,7 @@ p {
 }
 
 .kakao,
-.instagram,
-.facebook {
+#fb-root {
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -214,27 +215,31 @@ p {
     background-image: url(../img/kakaoicon.svg);
 }
 
-.facebook {
+#fb-root {
     background-image: url(../img/facebookicon.png);
 }
-
-.instagram {
-    background-image: url(../img/instaicon.png);
+.share{
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/share.png);
+    cursor: pointer;
 }
 
 
 /* 이름 입력페이자 */
-.name_wrap{
+.name_wrap {
     width: 90%;
     max-width: 370px;
 }
-.form_wrap{
+
+.form_wrap {
     z-index: 2;
     margin: 70px auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 #nameInput {
     display: none;
     width: 100%;
@@ -251,16 +256,17 @@ p {
     margin: 0 auto;
 }
 
-.name_subscription{
+.name_subscription {
     margin-top: 15px;
     font-size: 14px;
     display: flex;
     align-items: center;
 }
 
-.questionicon{
+.questionicon {
     cursor: pointer;
 }
+
 #userName {
     background-color: #0f0f0f;
     outline: none;
@@ -346,9 +352,11 @@ p {
     min-width: 250px;
     margin: 0 auto;
 }
-.q_innerbox{
+
+.q_innerbox {
     font-size: 18px;
 }
+
 .q_innerbox::before {
     content: '"';
     color: #fff;
@@ -635,9 +643,10 @@ p {
 }
 
 @media screen and (max-width : 425px) {
-    .q_innerbox{
+    .q_innerbox {
         font-size: 1rem;
     }
+
     #userName {
         float: none;
         width: 90%;
@@ -650,7 +659,8 @@ p {
         margin-top: 10px;
         width: 125px;
     }
-    .name_subscription{
+
+    .name_subscription {
         padding-right: 0px;
     }
 }
