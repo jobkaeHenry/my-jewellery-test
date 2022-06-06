@@ -5,6 +5,7 @@ function setScreenSize() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setScreenSize();
+window.addEventListener('resize',setScreenSize)
 
 //----------써클텍스트------------
 
