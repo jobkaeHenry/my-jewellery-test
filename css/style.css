@@ -10,7 +10,10 @@ body::after {
     overflow: hidden;
     z-index: -1;
     content:
-        url(../img/left_angle.svg) url(../img/right_angle.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
+        url(../img/left_angle.svg)
+        url(../img/facebookicon.png)
+        url(../img/share.png)        
+        url(../img/right_angle.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
 }
 
 * {
