@@ -346,7 +346,9 @@ p {
     min-width: 250px;
     margin: 0 auto;
 }
-
+.q_innerbox{
+    font-size: 18px;
+}
 .q_innerbox::before {
     content: '"';
     color: #fff;
@@ -633,6 +635,9 @@ p {
 }
 
 @media screen and (max-width : 425px) {
+    .q_innerbox{
+        font-size: 1rem;
+    }
     #userName {
         float: none;
         width: 90%;
@@ -659,7 +664,7 @@ p {
     }
 
     .h5 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .h4 {

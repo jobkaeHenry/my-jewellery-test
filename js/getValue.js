@@ -49,7 +49,7 @@ var next = () => {
 
 // ---------클릭함수----------------------
 $("#ans_01").click(function () {
-  hoverFunctionA();
+  // hoverFunctionA();
   let type = $("#whatType").val();
   let preValue = $("#" + type).val();
   $("#" + type).val(parseInt(preValue) + 1);
@@ -57,57 +57,57 @@ $("#ans_01").click(function () {
 });
 
 $("#ans_02").click(function () {
-  hoverFunctionB()
+  // hoverFunctionB()
   next()
 });
 
 
 // -------------클릭시 색상변경------------------
-var hoverFunctionA = () => {
-  $("#ans_01").css({
-    'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
-  })
-  $("#upLeft").css({
-    'background-image': 'url(../img/left_angle_filled.svg)'
-  })
-  $("#upRight").css({
-    'background-image': 'url(../img/right_angle_filled.svg)'
-  })
-  setTimeout(function () {
-    $("#ans_01").css({
-      'background': 'none'
-    })
-    $("#upLeft").css({
-      'background-image': 'url(../img/left_angle.svg)'
-    })
-    $("#upRight").css({
-      'background-image': 'url(../img/right_angle.svg)'
-    })
-  }, 100)
-}
+// var hoverFunctionA = () => {
+//   $("#ans_01").css({
+//     'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
+//   })
+//   $("#upLeft").css({
+//     'background-image': 'url(../img/left_angle_filled.svg)'
+//   })
+//   $("#upRight").css({
+//     'background-image': 'url(../img/right_angle_filled.svg)'
+//   })
+//   setTimeout(function () {
+//     $("#ans_01").css({
+//       'background': 'none'
+//     })
+//     $("#upLeft").css({
+//       'background-image': 'url(../img/left_angle.svg)'
+//     })
+//     $("#upRight").css({
+//       'background-image': 'url(../img/right_angle.svg)'
+//     })
+//   }, 100)
+// }
 
-var hoverFunctionB = () => {
-  $("#ans_02").css({
-    'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
-  })
-  $("#downLeft").css({
-    'background-image': 'url(../img/left_angle_filled.svg)'
-  })
-  $("#downRight").css({
-    'background-image': 'url(../img/right_angle_filled.svg)'
-  })
-  setTimeout(function () {
-    $("#ans_02").css({
-      'background': 'none'
-    })
-    $("#downLeft").css({
-      'background-image': 'url(../img/left_angle.svg)'
-    })
-    $("#downRight").css({
-      'background-image': 'url(../img/right_angle.svg)'
-    })
-  }, 100)
-}
+// var hoverFunctionB = () => {
+//   $("#ans_02").css({
+//     'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
+//   })
+//   $("#downLeft").css({
+//     'background-image': 'url(../img/left_angle_filled.svg)'
+//   })
+//   $("#downRight").css({
+//     'background-image': 'url(../img/right_angle_filled.svg)'
+//   })
+//   setTimeout(function () {
+//     $("#ans_02").css({
+//       'background': 'none'
+//     })
+//     $("#downLeft").css({
+//       'background-image': 'url(../img/left_angle.svg)'
+//     })
+//     $("#downRight").css({
+//       'background-image': 'url(../img/right_angle.svg)'
+//     })
+//   }, 100)
+// }
 
 
 
