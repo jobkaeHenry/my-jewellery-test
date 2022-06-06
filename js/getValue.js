@@ -1,3 +1,13 @@
+// 카피링크
+
+function copyUrl (){
+  navigator.clipboard.writeText(location.href).then(() => {
+    console.log('success');
+});
+
+  alert("링크가 복사되었습니다 붙여넣기를 통해 공유해보세요")
+}
+
 //----------브라우저 사이즈 감지
 
 function setScreenSize() {
