@@ -1,8 +1,15 @@
+//----------브라우저 사이즈 감지
+
+function setScreenSize() {
+	let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setScreenSize();
+
 //----------써클텍스트------------
 
 const circleType = new CircleType(document.getElementById('circleType'));
 circleType.radius(1100);
-
 
 //-------------------문제넘기기-----------------
 
