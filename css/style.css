@@ -169,12 +169,11 @@ p {
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     position: absolute;
-    top: 0;
-    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../img/bgpattern_tbl.png);
     display: none;
+    z-index: 0;
 }
 
 .button {
@@ -188,13 +187,12 @@ p {
     line-height: 50px;
     margin-bottom: 40px;
     cursor: pointer;
-    position: relative;
-    z-index: 5;
+    z-index: 1;
 }
 
 .footer {
-    z-index: 5;
     width: 325px;
+    z-index: 1;
 }
 
 .api {
@@ -206,9 +204,6 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: inherit;
-    z-index: 5;
-
 }
 
 .kakao,
