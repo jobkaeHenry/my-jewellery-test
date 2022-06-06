@@ -5,10 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="mbti, Jewelry test, jewelry mbti, 보석찾기테스트, 보석mbti, 무료 심리테스트, 무료mbti, 보석테스트, 보석심리, 보석심리테스트, 심리테스트, 보석찾기, 보석타로, mbti 보석,
+    성격테스트,
+    보석성격테스트,
+    보석심리테스트,
+    무료성격테스트,
+    무료심리테스트,
+    무료보석성격테스트,
+    무료보석심리테스트,
+    mbti 심리테스트,
+    mbti 재밌는,
+    보석 mbti,
+    보석 심리테스트,
+    보석 재밌는,
+    심리테스트 mbti,
+    심리테스트 보석,
+    심리테스트 재밌는,
+    재밌는 mbti,
+    재밌는 보석,
+    재밌는 심리테스트,
+    mbti 보석 심리테스트,
+    mbti 보석 재밌는,
+    mbti 심리테스트 재밌는,
+    mbti 재밌는 심리테스트,
+    보석 mbti 심리테스트,
+    보석 mbti 재밌는,
+    보석 심리테스트 mbti,
+    보석 심리테스트 재밌는,
+    보석 재밌는 mbti,
+    보석 재밌는 심리테스트,
+    심리테스트 mbti 보석,
+    심리테스트 보석 mbti,
+    재밌는 보석 mbti,
+    재밌는 보석 심리테스트,
+    재밌는 심리테스트 mbti,
+    ">
+    <meta name="description" content="[나만의 보석테스트] 나와 꼭 맞는 아름다운 보석을 간단한 심리테스트로 찾아보아요">
+    <meta name="author" content="잡캐헨리 | Jobkae Henry">
+    <meta property="og:image" content="{{ url_for('img', filename='page_preview') }}" />
 
-    <title>나와 어울리는 보석찾기 | Jewelry test</title>
+    <title>나만의 보석테스트-심리테스트로 나와 꼭 맞는 보석찾기</title>
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" defer></script>
     <script src="./js/circletype.min.js" defer></script>
@@ -24,16 +64,18 @@
         <section class="main" id="main">
             <div class="top">
             </div>
-            <div class="tit">
-                <div class="tit_top"></div>
-                <h2 class="arc_txt gold h5 regular mb-10" id="circleType">
-                    심리테스트로 나를 닮은 보석찾기
-                </h2>
-                <h3 class="bold gold h3">
-                    나를 닮은 보석은?
-                </h3>
-                <div class="tit_bottom"></div>
-            </div>
+            <h1>
+                <div class="title">
+                    <div class="title_top"></div>
+                    <h2 class="arc_txt gold h5 regular mb-10" id="circleType">
+                        심리테스트로 나를 닮은 보석찾기
+                    </h2>
+                    <h3 class="bold gold h3">
+                        나를 닮은 보석은?
+                    </h3>
+                    <div class="title_bottom"></div>
+                </div>
+            </h1>
             <div class="button" id="startTest" onclick="javascript: viewUserName()">
                 테스트 시작하기
             </div>
@@ -62,22 +104,29 @@
         <!-- 이름 입력페이지 -->
         <section class="nameInput" id="nameInput">
             <div class="top"></div>
+            <div class="name_wrap">
+                <div class="star_line">
+                    <div class="sm_star"></div>
+                    <div class="star_centerline"></div>
+                    <div class="sm_star"></div>
+                </div>
+                <div class="form_wrap">
+                    <div class="result_image_preview"></div>
 
-            <div class="form_wrap">
-                <div class="result_image_preview"></div>
-                <p class="gold center name_subscription">결과페이지 출력을 위해서만 사용됩니다 <img class="questionicon"
-                        src="./img/question.png" alt="물음표"></p>
-                <form id="form" onsubmit="return false;">
-                    <input type="text" id="userName" autocomplete="off" class="center gold bold"
-                        placeholder="이름을 입력해주세요" />
-                    <input type="submit" onclick="startTest();" class="submitBtn" />
-                </form>
+                    <form id="form" onsubmit="return false;">
+                        <input type="text" id="userName" autocomplete="off" class="center gold bold"
+                            placeholder="이름을 입력해주세요" />
+                        <input type="submit" value="시작하기" onclick="startTest();" class="submitBtn" />
+                    </form>
+                    <p class="gold center name_subscription"><img class="questionicon" src="./img/question.png"
+                            alt="물음표">&nbsp; 결과페이지에 표시되는 이름입니다</p>
+                </div>
+                <div class="star_line">
+                    <div class="sm_star"></div>
+                    <div class="star_centerline"></div>
+                    <div class="sm_star"></div>
+                </div>
             </div>
-            <!-- 
-            <input type="text" value="" id="userName">
-            <button onclick="javascript:startTest()">다음</button> -->
-
-
             <div class="bottom"></div>
             <div class="bg_pattern"></div>
         </section>
@@ -138,7 +187,7 @@
                         <div class="right_star"></div>
                     </div>
                     <div id="result_frame">
-                        <span class="h6" id="result_subtitle">
+                        <span class="h4" id="result_subtitle">
                             파라오의 사랑,
                         </span>
                         <span class="h3 black" id="result_title">
@@ -211,10 +260,10 @@
             </button> -->
             <button id="saveAsImg" class="white center" onclick="javascript:downImg()">
                 <img src="./img/saveBtn_white.png" alt="저장하기">
-                사진으로 저장하기
+                사진으로 저장해보세요!
             </button>
             <p class="gold center">
-                SNS 공유하기
+                SNS 공유해보세요!
             </p>
             <div class="api">
                 <a href="#">

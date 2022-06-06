@@ -113,11 +113,11 @@ p {
     flex-direction: column;
 }
 
-.tit {
+.title {
     text-align: center;
 }
 
-.tit_top {
+.title_top {
     margin-top: 5vh;
     width: 100%;
     height: 40px;
@@ -128,7 +128,7 @@ p {
     margin-bottom: 16px;
 }
 
-.tit_bottom {
+.title_bottom {
     width: 100%;
     height: 20px;
     margin-bottom: 40px;
@@ -173,7 +173,7 @@ p {
 }
 
 .button {
-    width: 300px;
+    width: 250px;
     height: 50px;
     background-color: #424242;
     color: #fff;
@@ -187,6 +187,7 @@ p {
 }
 
 .footer {
+    z-index: 2;
     width: 325px;
 }
 
@@ -223,8 +224,16 @@ p {
 
 
 /* 이름 입력페이자 */
+.name_wrap{
+    width: 90%;
+    max-width: 370px;
+}
 .form_wrap{
     z-index: 2;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #nameInput {
     display: none;
@@ -238,16 +247,18 @@ p {
 
 #form {
     z-index: 1;
+    display: block;
+    margin: 0 auto;
 }
 
 .name_subscription{
-    margin-bottom: 5px;
+    margin-top: 15px;
     font-size: 14px;
-    padding-right: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .questionicon{
-    padding-bottom: 5px;
     cursor: pointer;
 }
 #userName {
@@ -264,11 +275,13 @@ p {
 
 .submitBtn {
     height: 50px;
-    background-color: #D4B864;
+    background-color: #968246;
     margin-left: 10px;
     margin-bottom: 1px;
     width: 60px;
     border: none;
+    color: #ffffff;
+    font-weight: 500;
 }
 
 
@@ -504,12 +517,11 @@ p {
 
 #result_subtitle {
     margin-top: 100px;
-    margin-bottom: 5px;
 }
 
-#result_title {
+/* #result_title {
     line-height: 2.6rem;
-}
+} */
 
 .star_line {
     width: 100%;
@@ -590,12 +602,12 @@ p {
 }
 
 #saveAsImg>img {
-    padding-bottom: 4px;
+    padding-top: 4px;
 }
 
 #saveAsImg:hover {
     border: 1px solid #D4B864;
-    background-color: transparent;
+    background-color: #0f0f0f;
 }
 
 .contact {
@@ -624,6 +636,7 @@ p {
     #userName {
         float: none;
         width: 90%;
+        margin: 0 auto;
     }
 
     .submitBtn {

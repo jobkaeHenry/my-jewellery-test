@@ -27,7 +27,7 @@ var next = () => {
     $("#result_subtitle").html(mbtiResult[mbti]["subtitle"]);
     $("#result_title").html(mbtiResult[mbti]["title"]);
     $("#detail").html(mbtiResult[mbti]["subscription"]);
-    $("#character").html(mbtiResult[mbti]["character"] + userName + "' 님과 어울리는 보석이네요");
+    $("#character").html(mbtiResult[mbti]["character"] + userName + "' 님과 잘 어울리는 보석이네요");
     $("#result_card").css({
       'background-image': mbtiResult[mbti]["backgroundImage"]
     });
