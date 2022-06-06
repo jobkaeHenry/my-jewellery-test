@@ -253,7 +253,7 @@ p {
 #userName {
     background-color: #0f0f0f;
     outline: none;
-    /* width: 100%; */
+    width: 100%;
     min-width: 150px;
     height: 50px;
     font-size: 18px;
