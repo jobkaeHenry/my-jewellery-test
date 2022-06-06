@@ -10,6 +10,7 @@ var questNum = 0;
 var next = () => {
   if (questNum == 12) {
     viewResultPage();
+    var userName= document.getElementById("userName").value
     var mbti = "";
     ($("#EI").val() < 2) ? mbti += "I": mbti += "E";
     ($("#SN").val() < 2) ? mbti += "N": mbti += "S";
@@ -18,14 +19,14 @@ var next = () => {
     $("#result_subtitle").html(mbtiResult[mbti]["subtitle"]);
     $("#result_title").html(mbtiResult[mbti]["title"]);
     $("#detail").html(mbtiResult[mbti]["subscription"]);
-    $("#character").html(mbtiResult[mbti]["character"]);
+    $("#character").html(mbtiResult[mbti]["character"] + userName + "' 님과 어울리는 보석이네요");
     $("#result_card").css({
       'background-image': mbtiResult[mbti]["backgroundImage"]
     });
     $("#result_frame").css({
       'background-image': mbtiResult[mbti]["gemStoneFrame"]
     });
-    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"]);
+    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"])
 
   } else {
     $("#sheet").html(questionSheet[questNum]["sheet"]);
@@ -112,15 +113,20 @@ var result = document.getElementById("result");
 var resultShare = document.getElementById("result_share");
 var nameInput = document.getElementById("nameInput")
 
+function startTest() {
+  if(document.getElementById("userName").value==""){
+    alert("이름을 입력해주세요!")
+  }
+  else{
+  nameInput.style.display = "none";
+  test.style.display = "flex";
+  next()}
+}
+
 
 var viewUserName = () => {
   main.style.display = "none";
   nameInput.style.display = "flex";
-}
-
-const backToMain = () => {
-  main.style.display = "flex";
-  test.style.display = "none";
 }
 
 const viewResultPage = () => {
