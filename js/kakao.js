@@ -1,5 +1,5 @@
+Kakao.init('d63a2454b6b5f2aa928a43fdee5ff8e0');
 function sendLink() { // 카카오톡 공유하기
-  Kakao.init('d63a2454b6b5f2aa928a43fdee5ff8e0');
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
