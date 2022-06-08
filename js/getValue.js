@@ -1,9 +1,9 @@
 // 카피링크
 
-function copyUrlOfWebSite (){
+function copyUrlOfWebSite() {
   navigator.clipboard.writeText(location.href).then(() => {
     console.log('success');
-});
+  });
 
   alert("링크가 복사되었습니다 붙여넣기를 통해 공유해보세요")
 }
@@ -11,11 +11,11 @@ function copyUrlOfWebSite (){
 //----------브라우저 사이즈 감지
 
 function setScreenSize() {
-	let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 setScreenSize();
-window.addEventListener('resize',setScreenSize)
+window.addEventListener('resize', setScreenSize)
 
 //----------써클텍스트------------
 
@@ -28,7 +28,7 @@ var questNum = 0;
 var next = () => {
   if (questNum == 12) {
     viewResultPage();
-    var userName= document.getElementById("userName").value
+    var userName = document.getElementById("userName").value
     var mbti = "";
     ($("#EI").val() < 2) ? mbti += "I": mbti += "E";
     ($("#SN").val() < 2) ? mbti += "N": mbti += "S";
@@ -72,56 +72,6 @@ $("#ans_02").click(function () {
 });
 
 
-// -------------클릭시 색상변경------------------
-// var hoverFunctionA = () => {
-//   $("#ans_01").css({
-//     'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
-//   })
-//   $("#upLeft").css({
-//     'background-image': 'url(../img/left_angle_filled.svg)'
-//   })
-//   $("#upRight").css({
-//     'background-image': 'url(../img/right_angle_filled.svg)'
-//   })
-//   setTimeout(function () {
-//     $("#ans_01").css({
-//       'background': 'none'
-//     })
-//     $("#upLeft").css({
-//       'background-image': 'url(../img/left_angle.svg)'
-//     })
-//     $("#upRight").css({
-//       'background-image': 'url(../img/right_angle.svg)'
-//     })
-//   }, 100)
-// }
-
-// var hoverFunctionB = () => {
-//   $("#ans_02").css({
-//     'background': 'linear-gradient(90deg, #D4B864 0%, #AF854E 50%, #D4B864 100%)'
-//   })
-//   $("#downLeft").css({
-//     'background-image': 'url(../img/left_angle_filled.svg)'
-//   })
-//   $("#downRight").css({
-//     'background-image': 'url(../img/right_angle_filled.svg)'
-//   })
-//   setTimeout(function () {
-//     $("#ans_02").css({
-//       'background': 'none'
-//     })
-//     $("#downLeft").css({
-//       'background-image': 'url(../img/left_angle.svg)'
-//     })
-//     $("#downRight").css({
-//       'background-image': 'url(../img/right_angle.svg)'
-//     })
-//   }, 100)
-// }
-
-
-
-
 // -------------------화면넘기기 함수-----------------------
 
 
@@ -132,13 +82,13 @@ var resultShare = document.getElementById("result_share");
 var nameInput = document.getElementById("nameInput")
 
 function startTest() {
-  if(document.getElementById("userName").value==""){
+  if (document.getElementById("userName").value == "") {
     alert("이름을 입력해주세요!")
+  } else {
+    nameInput.style.display = "none";
+    test.style.display = "flex";
+    next()
   }
-  else{
-  nameInput.style.display = "none";
-  test.style.display = "flex";
-  next()}
 }
 
 
@@ -154,18 +104,24 @@ const viewResultPage = () => {
 }
 
 //  다운로드함수
-
-function downImg(){
-  html2canvas($("#downloadWrap")[0]).then(function(canvas){
+var agent = navigator.userAgent.toLowerCase();
+function downImg() {
+  if (agent.indexOf("safari") != -1) {
+    alert("죄송합니다 가난한 방구석 개발자라 맥북을 구매하지 못해 IOS에서 다운로드가 지원되지 않습니다. 열심히 일해 맥북 구매 후 기능을 추가하겠습니다")
+  } else {
+    function downloadURI(uri, name) {
+      var link = document.createElement("a")
+      link.download = name;
+      link.href = uri;
+      document.body.appendChild(link);
+      link.click();
+    }
+    html2canvas($("#downloadWrap")[0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
-      downloadURI(myImage, "my_type.jpg") 
-  });
-}
+      downloadURI(myImage, "my_type.jpg")
+    });
+  }
 
-function downloadURI(uri, name){
-  var link = document.createElement("a")
-  link.download = name;
-  link.href = uri;
-  document.body.appendChild(link);
-  link.click();
+
+
 }
