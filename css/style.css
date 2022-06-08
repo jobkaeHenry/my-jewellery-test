@@ -207,7 +207,8 @@ p {
 }
 
 .kakao,
-#fb-root {
+.fb-share-button>a {
+    display: block;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -217,7 +218,7 @@ p {
     background-image: url(../img/kakaoicon.svg);
 }
 
-#fb-root {
+.fb-share-button>a {
     background-image: url(../img/facebookicon.png);
 }
 .share{
