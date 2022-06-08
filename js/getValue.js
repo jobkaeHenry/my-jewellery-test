@@ -106,7 +106,7 @@ const viewResultPage = () => {
 //  다운로드함수
 var agent = navigator.userAgent.toLowerCase();
 function downImg() {
-  if (agent.indexOf("safari") != -1) {
+  if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
     alert("죄송합니다 가난한 방구석 개발자라 맥북을 구매하지 못해 IOS에서 다운로드가 지원되지 않습니다. 열심히 일해 맥북 구매 후 기능을 추가하겠습니다")
   } else {
     function downloadURI(uri, name) {
