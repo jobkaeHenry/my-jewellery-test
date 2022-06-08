@@ -107,7 +107,7 @@ const viewResultPage = () => {
 var agent = navigator.userAgent.toLowerCase();
 function downImg() {
   if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
-    alert("죄송합니다 가난한 방구석 개발자라 맥북을 구매하지 못해 IOS에서 다운로드가 지원되지 않습니다. 열심히 일해 맥북 구매 후 기능을 추가하겠습니다")
+    alert("죄송합니다 가난한 방구석 개발자라 맥북을 구매하지 못해 IOS에서 다운로드가 지원되지 않습니다. 열심히 일해 맥북 구매 후 기능을 추가하겠습니다\\n 후원은 언제나 감사합니다 \\n 카카오뱅크 3333075550836 이준구")
   } else {
     function downloadURI(uri, name) {
       var link = document.createElement("a")
