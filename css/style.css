@@ -10,13 +10,11 @@ body::after {
     overflow: hidden;
     z-index: -1;
     content:
-        url(../img/left_angle.svg)
-        url(../img/facebookicon.png)
-        url(../img/share.png)        
-        url(../img/right_angle.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
+    url(../img/star_sm.png) url(../img/left_angle.svg) url(../img/facebookicon.png) url(../img/share.png) url(../img/right_angle.svg) url(../img/gemstone_ring.png) url(../img/star.svg) url(../img/result_bg_green.jpg) url(../img/result_bg_purple.jpg) url(../img/result_bg_teal.jpg) url(../img/result_bg_blue.jpg) url(../img/result_bg_pink.jpg) url(../img/result_bg_orange.jpg) url(../img/result_frame_green.png) url(../img/result_frame_purple.png) url(../img/result_frame_teal.png) url(../img/result_frame_blue.png) url(../img/result_frame_pink.png) url(../img/result_frame_orange.png) url(../img/gemstone1.png) url(../img/gemstone2.png) url(../img/gemstone3.png) url(../img/gemstone4.png) url(../img/gemstone5.png) url(../img/gemstone6.png) url(../img/gemstone7.png) url(../img/gemstone8.png) url(../img/gemstone9.png) url(../img/gemstone10.png) url(../img/gemstone11.png) url(../img/gemstone12.png);
 }
 
 * {
+    word-break: keep-all;
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', Helvetica, Tahoma, Arial, sans-serif, 'PingFang SC';
@@ -221,7 +219,8 @@ p {
 .fb-share-button>a {
     background-image: url(../img/facebookicon.png);
 }
-.share{
+
+.share {
     width: 36px;
     height: 36px;
     background-image: url(../img/share.png);
@@ -283,6 +282,7 @@ p {
 }
 
 .submitBtn {
+    display: block;
     height: 50px;
     background-color: #968246;
     margin-left: 10px;
@@ -308,16 +308,17 @@ p {
     justify-content: center;
 }
 
-/* #back {
+#home {
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 auto;
     margin-bottom: 2vh;
     width: 20px;
     height: 20px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: none;
-} */
+}
 
 
 .progress p {
@@ -500,6 +501,7 @@ p {
     padding-bottom: 40px;
     text-align: center;
     color: #dcbd64;
+    word-break: keep-all;
     background-image: url(../img/result_frame_green.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -604,6 +606,16 @@ p {
     left: 50%;
 }
 
+.my_bob_jul {
+    margin: 0 auto;
+    width: 100%;
+    height: 160px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    /* background-color: #D4B864; */
+}
+
 @keyframes btnMove {
     from {
         transform: translate(-50%, 2px);
@@ -629,6 +641,65 @@ p {
 }
 
 
+.dim_wrap {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.dim{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(36, 36, 36, 0.7);
+}
+
+.item_wrap {
+    width: 95vw;
+    height: 90vh;
+    min-width: 320px;
+    max-width: 520px;
+    max-height: 660px;
+    min-height: 620px;
+    background-color: #fff;
+
+}
+
+#exitShopping {
+    align-self: baseline;
+    justify-self: right;
+    float: right;
+    border: none;
+    background-color: #dcbd64;
+    border-radius: 50px;
+    color: #fff;
+    margin: 15px 15px 0 0;
+    width: 36px;
+    height: 36px;
+}
+
+.item_headline {
+    margin-top: 60px;
+}
+
+.item_container {
+    margin: 0 auto;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.item_container>iframe{
+    border: none;
+    width: 115px;
+    height: 240px;
+}
+
 
 /* 반응형 */
 
@@ -642,13 +713,13 @@ p {
         padding-top: -50px;
         height: calc(var(--vh, 1vh) * 100);
         justify-content: none;
+    }    .q_innerbox {
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width : 425px) {
-    .q_innerbox {
-        font-size: 1rem;
-    }
+
 
     #userName {
         float: none;
@@ -698,6 +769,16 @@ p {
 
     .tit_bottom {
         margin-bottom: 20px;
+    }
+}
+@media screen and (max-width : 363px) {
+
+
+    .item_container>iframe:nth-child(5){
+        display: none;
+    }
+    .item_container>iframe:nth-child(6){
+        display: none;
     }
 }
 

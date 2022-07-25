@@ -12,6 +12,15 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_green.jpg)",
     "gemStoneFrame": "url(./img/result_frame_green.png)",
     "gemStoneImage": "./img/gemstone1.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNmzQ",
+      2:"https://coupa.ng/ccNmIe",
+      3:"https://coupa.ng/ccNmFC",
+      4:"https://coupa.ng/ccNmG4",
+      5:"https://coupa.ng/ccNmBQ",
+      6:"https://coupa.ng/ccNmJN"
+    }
+
   },
 
   "ISTP": {
@@ -22,6 +31,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_teal.jpg)",
     "gemStoneFrame": "url(./img/result_frame_teal.png)",
     "gemStoneImage": "./img/gemstone2.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNmNc",
+      2:"https://coupa.ng/ccNmNW",
+      3:"https://coupa.ng/ccNmOH",
+      4:"https://coupa.ng/ccNmQE",
+      5:"https://coupa.ng/ccNmRm",
+      6:"https://coupa.ng/ccNmSg"
+    }
   },
 
   "ISFJ": {
@@ -32,6 +49,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_green.jpg)",
     "gemStoneFrame": "url(./img/result_frame_green.png)",
     "gemStoneImage": "./img/gemstone3.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNmSY",
+      2:"https://coupa.ng/ccNmSC",
+      3:"https://coupa.ng/ccNmVu",
+      4:"https://coupa.ng/ccNmTk",
+      5:"https://coupa.ng/ccNmT8",
+      6:"https://coupa.ng/ccNmWc"
+    }
   },
 
   "ISFP": {
@@ -42,6 +67,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_green.jpg)",
     "gemStoneFrame": "url(./img/result_frame_green.png)",
     "gemStoneImage": "./img/gemstone4.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNmzQ",
+      2:"https://coupa.ng/ccNmIe",
+      3:"https://coupa.ng/ccNmFC",
+      4:"https://coupa.ng/ccNmG4",
+      5:"https://coupa.ng/ccNmBQ",
+      6:"https://coupa.ng/ccNmJN"
+    }
   },
 
   "INTJ": {
@@ -52,6 +85,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_blue.jpg)",
     "gemStoneFrame": "url(./img/result_frame_teal.png)",
     "gemStoneImage": "./img/gemstone5.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNn40",
+      2:"https://coupa.ng/ccNn5q",
+      3:"https://coupa.ng/ccNn4w",
+      4:"https://coupa.ng/ccNn5q",
+      5:"https://coupa.ng/ccNn5q",
+      6:"https://coupa.ng/ccNn6A"
+    }
   },
 
   "INTP": {
@@ -62,6 +103,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
     "gemStoneImage": "./img/gemstone6.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNn7u",
+      2:"https://coupa.ng/ccNn76",
+      3:"https://coupa.ng/ccNn8s",
+      4:"https://coupa.ng/ccNn82",
+      5:"https://coupa.ng/ccNn9u",
+      6:"https://coupa.ng/ccNn9K" 
+    }
   },
 
   "INFJ": {
@@ -72,6 +121,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
     "gemStoneImage": "./img/gemstone7.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNoaK",
+      2:"https://coupa.ng/ccNoaV",
+      3:"https://coupa.ng/ccNobp",
+      4:"https://coupa.ng/ccNob7",
+      5:"https://coupa.ng/ccNoct",
+      6:"https://coupa.ng/ccNodD"
+    }
   },
   "INFP": {
     "subtitle": "적색의 풍요로움,",
@@ -81,6 +138,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
     "gemStoneImage": "./img/gemstone8.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNoaK",
+      2:"https://coupa.ng/ccNoaV",
+      3:"https://coupa.ng/ccNobp",
+      4:"https://coupa.ng/ccNob7",
+      5:"https://coupa.ng/ccNoct",
+      6:"https://coupa.ng/ccNodD"
+    }
   },
   "ESTJ": {
     "subtitle": "모든 색을 가진 보석",
@@ -90,6 +155,15 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_blue.jpg)",
     "gemStoneFrame": "url(./img/result_frame_blue.png)",
     "gemStoneImage": "./img/gemstone9.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNjoC",
+      2:"https://coupa.ng/ccNkkl",
+      3:"https://coupa.ng/ccNkmF",
+      4:"https://coupa.ng/ccNknX",
+      5:"https://coupa.ng/ccNkll",
+      6:"https://coupa.ng/ccNkwI",
+    }
+
   },
   "ESTP": {
     "subtitle": "푸른 바다를 품은 보석,",
@@ -99,6 +173,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_blue.jpg)",
     "gemStoneFrame": "url(./img/result_frame_blue.png)",
     "gemStoneImage": "./img/gemstone10.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNofD",
+      2:"https://coupa.ng/ccNofR",
+      3:"https://coupa.ng/ccNof5",
+      4:"https://coupa.ng/ccNogB",
+      5:"https://coupa.ng/ccNogT",
+      6:"https://coupa.ng/ccNohj"
+    }
   },
 
   "ESFJ": {
@@ -109,6 +191,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_orange.jpg)",
     "gemStoneFrame": "url(./img/result_frame_orange.png)",
     "gemStoneImage": "./img/gemstone11.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNojF",
+      2:"https://coupa.ng/ccNolz",
+      3:"https://coupa.ng/ccNomB",
+      4:"https://coupa.ng/ccNokN",
+      5:"https://coupa.ng/ccNok7",
+      6:"https://coupa.ng/ccNoj1"
+    }
   },
   "ESFP": {
     "subtitle": "태양을 닮은 보석,",
@@ -118,6 +208,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_orange.jpg)",
     "gemStoneFrame": "url(./img/result_frame_orange.png)",
     "gemStoneImage": "./img/gemstone12.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNopb",
+      2:"https://coupa.ng/ccNon3",
+      3:"https://coupa.ng/ccNonB",
+      4:"https://coupa.ng/ccNonT",
+      5:"https://coupa.ng/ccNon3",
+      6:"https://coupa.ng/ccNopP"
+    }
   },
 
   "ENTJ": {
@@ -128,6 +226,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
     "gemStoneImage": "./img/gemstone13.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNowr",
+      2:"https://coupa.ng/ccNovP",
+      3:"https://coupa.ng/ccNorl" ,
+      4:"https://coupa.ng/ccNovn",
+      5:"https://coupa.ng/ccNovF",
+      6:"https://coupa.ng/ccNowd"
+    }
   },
 
   "ENTP": {
@@ -138,6 +244,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_purple.jpg)",
     "gemStoneFrame": "url(./img/result_frame_purple.png)",
     "gemStoneImage": "./img/alexandrite.gif",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNoxf",
+      2:"https://coupa.ng/ccNoyB",
+      3:"https://coupa.ng/ccNoxt",
+      4:"https://coupa.ng/ccNoxF",
+      5:"https://coupa.ng/ccNoyp",
+      6:"https://coupa.ng/ccNoy5"
+    }
   },
   "ENFJ": {
     "subtitle": "사랑과 치유의보석,",
@@ -147,6 +261,14 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
     "gemStoneImage": "./img/gemstone15.png",
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNoAo",
+      2:"https://coupa.ng/ccNoAw",
+      3:"https://coupa.ng/ccNoBx",
+      4:"https://coupa.ng/ccNoBP",
+      5:"https://coupa.ng/ccNoBZ",
+      6:"https://coupa.ng/ccNoDt"
+    }
   },
   "ENFP": {
     "subtitle": "장미를 닮은 보석,",
@@ -156,5 +278,13 @@ var mbtiResult = {
     "backgroundImage": "url(./img/result_bg_pink.jpg)",
     "gemStoneFrame": "url(./img/result_frame_pink.png)",
     "gemStoneImage": "./img/gemstone16.png",
-  },
+    "shoppingUrl" : {
+      1:"https://coupa.ng/ccNoEt",
+      2:"https://coupa.ng/ccNoFT",
+      3:"https://coupa.ng/ccNoEP",
+      4:"https://coupa.ng/ccNoE7",
+      5:"https://coupa.ng/ccNoFp",
+      6:"https://coupa.ng/ccNoGH" 
+    }
+  }
 }

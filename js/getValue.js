@@ -30,10 +30,12 @@ var next = () => {
     viewResultPage();
     var userName = document.getElementById("userName").value
     var mbti = "";
+
     ($("#EI").val() < 2) ? mbti += "I": mbti += "E";
     ($("#SN").val() < 2) ? mbti += "N": mbti += "S";
     ($("#TF").val() < 2) ? mbti += "F": mbti += "T";
     ($("#JP").val() < 2) ? mbti += "P": mbti += "J";
+
     $("#result_subtitle").html(mbtiResult[mbti]["subtitle"]);
     $("#result_title").html(mbtiResult[mbti]["title"]);
     $("#detail").html(mbtiResult[mbti]["subscription"]);
@@ -44,7 +46,16 @@ var next = () => {
     $("#result_frame").css({
       'background-image': mbtiResult[mbti]["gemStoneFrame"]
     });
-    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"])
+    $("#gemStone").attr("src", mbtiResult[mbti]["gemStoneImage"]);
+
+
+    // 쇼핑리스트 만들기 함수
+    const putShoppingList = () => {
+      for (let i = 1; i < 7; i++) {
+        $(".item_container").append("<iframe src=" + "'" + mbtiResult[mbti]["shoppingUrl"][i] + "'" + "referrerpolicy='unsafe-url'></iframe>")
+      }
+    }
+    putShoppingList()
 
   } else {
     $("#sheet").html(questionSheet[questNum]["sheet"]);
@@ -56,6 +67,21 @@ var next = () => {
     questNum++
   }
 };
+
+
+
+
+// 홈으로가기 함수
+const home = () => {
+  questNum = 0
+  $("#EI").val(0)
+  $("#SN").val(0)
+  $("#TF").val(0)
+  $("#JP").val(0)
+  test.style.display = "none"
+  nameInput.style.display = "flex"
+}
+
 
 // ---------클릭함수----------------------
 $("#ans_01").click(function () {
@@ -70,6 +96,7 @@ $("#ans_02").click(function () {
   // hoverFunctionB()
   next()
 });
+
 
 
 // -------------------화면넘기기 함수-----------------------
@@ -92,7 +119,7 @@ function startTest() {
 }
 
 
-var viewUserName = () => {
+const viewUserName = () => {
   main.style.display = "none";
   nameInput.style.display = "flex";
 }
@@ -105,9 +132,18 @@ const viewResultPage = () => {
 
 //  다운로드함수
 var agent = navigator.userAgent.toLowerCase();
+var dimWrap = document.getElementById("dimWrap")
+var saveAsImg = document.getElementById("saveAsImg")
+
 function downImg() {
+
+
   if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
-    alert("죄송합니다 가난한 방구석 개발자라 맥북을 구매하지 못해 IOS에서 다운로드가 지원되지 않습니다. 열심히 일해 맥북 구매 후 기능을 추가하겠습니다\\n 후원은 언제나 감사합니다 \\n 카카오뱅크 3333075550836 이준구")
+    alert("ios에서는 다운로드 기능이 제대로 작동하지 않을 수 있습니다.")
+    html2canvas($("#downloadWrap")[0]).then(function (canvas) {
+      var myImage = canvas.toDataURL();
+      downloadURI(myImage, "my_type.jpg")
+    });
   } else {
     function downloadURI(uri, name) {
       var link = document.createElement("a")
@@ -121,7 +157,17 @@ function downImg() {
       downloadURI(myImage, "my_type.jpg")
     });
   }
+  dimWrap.style.display = "flex";
+  saveAsImg.style.display = "none";
+}
 
+// --------------------쇼핑창 닫기
+$("#dim").click(function () {
+  exitShopping()
+});
 
-
+const exitShopping = () => {
+  let dimwrap = document.getElementById("dimWrap")
+  dimwrap.style.display = "none"
+  saveAsImg.style.display = "block"
 }
