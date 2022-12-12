@@ -1,5 +1,6 @@
-# my-jewellery-test
-Mbit 기반으로 만든 나만의 주얼리 찾기 서비스입니다<br>
-React, 번들링에 대한 지식이 없던 때에 만든 날것 그대로의 HTMl, css, javascript 덩어리입니다ㅠㅜ
+![PixelBook Go](https://user-images.githubusercontent.com/100949102/206990365-48a124c5-c5e3-47ec-82e8-b7e0af234f8f.png)
+![Pixel 4 XL](https://user-images.githubusercontent.com/100949102/206990441-8f2679a3-559a-49bf-ad74-a2acabbacdd7.png)
 
-결과 해설 등을 담은 readme 언넝 채우도록하겠습니다 
+
+웹사이트
+https://myjewellerytest.netlify.app/
